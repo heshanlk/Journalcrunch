@@ -850,3 +850,7 @@ a.drupalizing:link, a.drupalizing:active, a.drupalizing:visited, a.drupalizing:h
   -khtml-opacity: 0.5;
   opacity: 0.5;
 }
+
+.blog_usernames_blog{
+  display: none;
+}
