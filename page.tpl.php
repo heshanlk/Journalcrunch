@@ -66,16 +66,16 @@
             <div id="topSocial">
 
               <ul>
-                <li><a class="twitter tip" href="#" title="Follow Us on Twitter!"></a></li>
-                <li><a class="facebook" href="#" title="Join Us on Facebook!"></a></li>
+                <li><a class="twitter tip" href="http://twitter.com/heshanlk" title="Follow Us on Twitter!"></a></li>
+                <li><a class="facebook" href="http://www.facebook.com/heshanlk" title="Join Us on Facebook!"></a></li>
                 <li><a class="rss" title="RSS" href="rss.xml" title="Subcribe to Our RSS Feed"></a></li>
               </ul>
 
             </div>
 
             <div style="position: absolute; bottom: -10px; left: 290px; z-index: 100; width: 350px; border: 1px dotted rgb(139, 157, 163); padding: 5px; background: none repeat scroll 0% 0% rgb(238, 238, 238); -moz-border-radius: 4px 4px 4px 4px; text-align: center; font-size: 11px;">
-              <a id="switcher" href="#">Switch to "Slider" View</a><br>
-                <small><em style="color: rgb(102, 102, 102);">This switcher appears on this demo only. Set your view from  Theme Options.</em></small>
+              <a id="switcher" href="/contact">#drupal, #php and many more which I involved in</a><br>
+                <small><em style="color: rgb(102, 102, 102);">Welcome to my development blog. I code I blog.</em></small>
             </div>
           </div><!-- EOF: #header -->
 
