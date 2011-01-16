@@ -384,6 +384,8 @@ pre {
   background: none repeat scroll 0 0 #EEF2F2;
   border: medium none;
   /*    padding: 10px;*/
+  height: 100%;
+  width: 95%;
 }
 
 #content img.node-front-image  {
@@ -416,7 +418,7 @@ pre {
   padding:0;
   overflow: hidden;
   display:block;
-  height:300px;
+  height:340px;
 }
 
 #content .node-front.sticky .nodeInner h2, #content #colLeft .node-front.sticky.node-taxonomy .nodeInner h2 { 
@@ -435,7 +437,7 @@ pre {
   left: 370px;
   position: absolute;
   text-indent: -9999px;
-  top: 260px;
+  top: 300px;
   width: 46px;
 }
 
