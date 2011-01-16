@@ -194,6 +194,10 @@ ul {
   text-indent:-9999px;
 }
 
+#topSocial ul li a.drupal {
+  background:url(images/ico_social_drupal.png) 0 0 no-repeat;
+}
+
 #topSocial ul li a.twitter {
   background:url(images/ico_social_twitter.png) 0 0 no-repeat;
 }	
@@ -207,7 +211,7 @@ ul {
 }
 
 
-#topSocial ul li a.twitter:hover, #topSocial ul li a.facebook:hover, #topSocial ul li a.rss:hover {
+#topSocial ul li a.drupal:hover, #topSocial ul li a.twitter:hover, #topSocial ul li a.facebook:hover, #topSocial ul li a.rss:hover {
   background-position:0 -49px;
 }
 

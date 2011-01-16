@@ -66,6 +66,7 @@
             <div id="topSocial">
 
               <ul>
+                <li><a class="drupal tip" href="http://drupal.org/user/199102" title="Find me on Drupal.org!"></a></li>
                 <li><a class="twitter tip" href="http://twitter.com/heshanlk" title="Follow Us on Twitter!"></a></li>
                 <li><a class="facebook" href="http://www.facebook.com/heshanlk" title="Join Us on Facebook!"></a></li>
                 <li><a class="rss" title="RSS" href="rss.xml" title="Subcribe to Our RSS Feed"></a></li>
