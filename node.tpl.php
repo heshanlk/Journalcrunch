@@ -30,13 +30,12 @@ if ($is_front || arg(0) == 'taxonomy' || arg(0) == 'frontpage') { // Default fro
      <div class="content clear-block">
       <?php print $content ?>
     </div>
-
-    <div class="clear-block" style="color: #888888; font-size: 11px; margin: 0; text-transform: uppercase;">
-      <?php if ($links): ?>
-        <div class="post-time transparent">
-          <b><?php echo format_date($node->created, 'custom', "j") ?></b>
-          <div><?php echo format_date($node->created, 'custom', "M, Y") ?></div>
-        </div>  
+    <div class="post-time transparent">
+      <b><?php echo format_date($node->created, 'custom', "j") ?></b>
+      <div><?php echo format_date($node->created, 'custom', "M, Y") ?></div>
+    </div>
+    <div class="clear-block node-links" style="color: #888888; font-size: 11px; margin: 0; text-transform: uppercase;">
+      <?php if ($links): ?> 
       <?php if (FALSE): ?>
           <span class="submitted"><?php print t('!date', array('!date' => format_date($node->created, 'custom', "M j, Y"))); ?></span>
       <?php endif; ?>

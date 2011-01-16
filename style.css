@@ -294,7 +294,7 @@ pre {
   -moz-border-radius:8px;
   -webkit-border-radius:8px;
   /* 	height:260px; */
-  height:350px;
+  height:360px;
   font-size:12px;
   overflow:hidden;
 }
@@ -418,7 +418,7 @@ pre {
   padding:0;
   overflow: hidden;
   display:block;
-  height:340px;
+  height:360px;
 }
 
 #content .node-front.sticky .nodeInner h2, #content #colLeft .node-front.sticky.node-taxonomy .nodeInner h2 { 
@@ -853,4 +853,8 @@ a.drupalizing:link, a.drupalizing:active, a.drupalizing:visited, a.drupalizing:h
 
 .blog_usernames_blog{
   display: none;
+}
+
+.node-links{
+  top: 74px;
 }
