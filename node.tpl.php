@@ -9,71 +9,78 @@ if ($is_front || arg(0) == 'taxonomy' || arg(0) == 'frontpage') { // Default fro
   }
 ?>
 
-  <div id="node-<?php print $node->nid; ?>" class="node<?php if ($sticky) {
+  <div id="node-<?php print $node->nid; ?>" class="node<?php
+  if ($sticky) {
     print ' sticky';
-  } ?><?php if (!$status) {
+  } ?><?php
+  if (!$status) {
     print ' node-unpublished';
-  } ?> node-front <?php if (arg(0) == 'taxonomy') {
-    print ' node-taxonomy';
-  } ?>">
+  } ?> node-front <?php
+     if (arg(0) == 'taxonomy') {
+       print ' node-taxonomy';
+     }
+?>">
 
-  <div class="nodeInner">
+   <div class="nodeInner">
 
 <?php print $picture ?>
 
-    <h2><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
+     <h2><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
 
     <div class="content clear-block">
-<?php print $content ?>
+      <?php print $content ?>
     </div>
 
     <div class="clear-block" style="color: #888888; font-size: 11px; margin: 0; text-transform: uppercase;">
 <?php if ($links): ?>
-
-<?php if ($node->created): ?>
-          <div class="post-time transparent">
-            <b><?php echo format_date($node->created, 'custom', "j") ?></b>
-            <div><?php echo format_date($node->created, 'custom', "M, Y") ?></div>
-          </div>
+        <div class="post-time transparent">
+          <b><?php echo format_date($node->created, 'custom', "j") ?></b>
+          <div><?php echo format_date($node->created, 'custom', "M, Y") ?></div>
+        </div>
+<?php if ($submitted): ?>
           <span class="submitted"><?php print t('!date', array('!date' => format_date($node->created, 'custom', "M j, Y"))); ?></span>
-<?php endif; ?>
+      <?php endif; ?>
 
           <div class="links" style="display:inline;"><?php print $links; ?></div>
 
 <?php endif; ?>
-              </div>
+        </div>
 
-            </div>
+      </div>
 
-          </div>
+    </div>
 
-<?php } else { ?>
+<?php } else {
+ ?>
 
-        <div id="node-<?php print $node->nid; ?>" class="node<?php if ($sticky) {
+          <div id="node-<?php print $node->nid; ?>" class="node<?php
+          if ($sticky) {
             print ' sticky';
-          } ?><?php if (!$status) {
+          }
+?><?php
+          if (!$status) {
             print ' node-unpublished';
           } ?>">
 
-<?php print $picture ?>
+    <?php print $picture ?>
 
         <h1><?php print $title ?></h1>
 
         <div class="meta clear-block">
 
-    <?php if ($submitted): ?>
+<?php if ($submitted): ?>
             <div class="submitted"><?php print $submitted; ?></div>
 <?php endif; ?>
 
 <?php if ($taxonomy): ?>
-                <div class="terms"><?php print $terms ?></div>
-<?php endif; ?>
+              <div class="terms"><?php print $terms ?></div>
+  <?php endif; ?>
 
               </div>
 
               <div class="content clear-block">
 <?php print $content ?>
-                </div>
+              </div>
 
 <?php if ($links): ?>
                   <div class="links"><?php print $links; ?></div>
