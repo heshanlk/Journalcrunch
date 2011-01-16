@@ -383,6 +383,12 @@ pre {
   background:url(images/bk_readmore.png) 0 -46px no-repeat;
 }
 
+#content img {
+  -moz-border-radius: 8px 8px 8px 8px;
+  background: none repeat scroll 0 0 #EEF2F2;
+  border: medium none;
+}
+
 #content .nodeInner img {
   -moz-border-radius: 8px 8px 8px 8px;
   background: none repeat scroll 0 0 #EEF2F2;
