@@ -12,14 +12,7 @@ regions[footer_second] = Second Footer Block Area
 regions[footer_third] = Third Footer Block Area
 regions[footer_fourth] = Fourth Footer Block Area
 
-version = "6.x-1.0"
+version = "6.x-1.0-dev"
 core = "6.x"
 project = "journalcrunch"
-
-
-; Information added by drupal.org packaging script on 2011-01-08
-version = "6.x-1.0"
-core = "6.x"
-project = "journalcrunch"
-datestamp = "1294496752"
 
