@@ -75,7 +75,7 @@
 
             <div style="position: absolute; bottom: -10px; left: 290px; z-index: 100; width: 350px; border: 1px dotted rgb(139, 157, 163); padding: 5px; background: none repeat scroll 0% 0% rgb(238, 238, 238); -moz-border-radius: 4px 4px 4px 4px; text-align: center; font-size: 11px;">
               <a id="switcher" href="/contact">I'm an open source contributor. read more about me</a><br>
-                <small><em style="color: rgb(102, 102, 102);">- Heshan Wanigasooriya <heshan (at) heidisoft (dot) com></em></small>
+                <small><em style="color: rgb(102, 102, 102);">- Heshan Wanigasooriya</em></small>
             </div>
           </div><!-- EOF: #header -->
 
