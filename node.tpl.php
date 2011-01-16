@@ -21,29 +21,29 @@ if ($is_front || arg(0) == 'taxonomy' || arg(0) == 'frontpage') { // Default fro
      }
 ?>">
 
-   <div class="nodeInner">
+  <div class="nodeInner">
 
-<?php print $picture ?>
+    <?php print $picture ?>
 
      <h2><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
 
-    <div class="content clear-block">
+     <div class="content clear-block">
       <?php print $content ?>
     </div>
 
     <div class="clear-block" style="color: #888888; font-size: 11px; margin: 0; text-transform: uppercase;">
-<?php if ($links): ?>
+      <?php if ($links): ?>
         <div class="post-time transparent">
           <b><?php echo format_date($node->created, 'custom', "j") ?></b>
           <div><?php echo format_date($node->created, 'custom', "M, Y") ?></div>
-        </div>
-<?php if ($submitted): ?>
+        </div>  
+      <?php if (FALSE): ?>
           <span class="submitted"><?php print t('!date', array('!date' => format_date($node->created, 'custom', "M j, Y"))); ?></span>
       <?php endif; ?>
 
           <div class="links" style="display:inline;"><?php print $links; ?></div>
 
-<?php endif; ?>
+      <?php endif; ?>
         </div>
 
       </div>
@@ -51,7 +51,7 @@ if ($is_front || arg(0) == 'taxonomy' || arg(0) == 'frontpage') { // Default fro
     </div>
 
 <?php } else {
- ?>
+?>
 
           <div id="node-<?php print $node->nid; ?>" class="node<?php
           if ($sticky) {
@@ -62,30 +62,30 @@ if ($is_front || arg(0) == 'taxonomy' || arg(0) == 'frontpage') { // Default fro
             print ' node-unpublished';
           } ?>">
 
-    <?php print $picture ?>
+  <?php print $picture ?>
 
-        <h1><?php print $title ?></h1>
+          <h1><?php print $title ?></h1>
 
-        <div class="meta clear-block">
+          <div class="meta clear-block">
 
-<?php if ($submitted): ?>
+    <?php if ($submitted): ?>
             <div class="submitted"><?php print $submitted; ?></div>
-<?php endif; ?>
+    <?php endif; ?>
 
-<?php if ($taxonomy): ?>
+    <?php if ($taxonomy): ?>
               <div class="terms"><?php print $terms ?></div>
+    <?php endif; ?>
+
+            </div>
+
+            <div class="content clear-block">
+    <?php print $content ?>
+            </div>
+
+  <?php if ($links): ?>
+                <div class="links"><?php print $links; ?></div>
   <?php endif; ?>
 
               </div>
-
-              <div class="content clear-block">
-<?php print $content ?>
-              </div>
-
-<?php if ($links): ?>
-                  <div class="links"><?php print $links; ?></div>
-<?php endif; ?>
-
-                </div>
 
 <?php } ?>
