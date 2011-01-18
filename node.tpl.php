@@ -1,5 +1,5 @@
 <?php
-if ($is_front || arg(0) == 'taxonomy') { // Default frontpage and every taxonomy page
+if ($is_front || arg(0) == 'taxonomy' || arg(0) == 'blog') { // Default frontpage and every taxonomy page
   if (!variable_get('isFirstNoStickyNode', FALSE)) {
 
     if (!$node->sticky) {
