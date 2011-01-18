@@ -84,7 +84,7 @@
           <div id="content">
 
           <?php
-              if ($is_front) {
+              if ($is_front || arg(0) == 'blog') {
                 print $messages;
                 print $tabs;
                 print $content;
