@@ -80,7 +80,7 @@
             </div>
           </div><!-- EOF: #header -->
 
-          <!-- Content. -->  
+          <!-- Content. -->
           <div id="content">
 
           <?php
@@ -136,16 +136,14 @@
             </div>
 
             <div id="footer-message">
-            <?php print $footer_message ?>
+            <?php print $footer_message . $footer ?>
+            </div>
+
           </div>
 
         </div>
 
-      </div>
-
-    </div><!-- EOF: #footer -->
-
-    </div>
-
+      </div><!-- EOF: #footer -->
+    <?php print $closure ?>
   </body>
 </html>
